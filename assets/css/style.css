@@ -81,7 +81,9 @@ button:active {
     padding-top: 15px;
 }
 
-#result {
+#resultBox {
+    font-size: xx-large;
+    font-weight: bolder;
     margin-top: 20px;
     margin-bottom: 20px;
     padding-top: 20px;

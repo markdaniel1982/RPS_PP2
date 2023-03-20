@@ -12,7 +12,10 @@ console.log("DOM Loaded")
 
 function playGame() {
     const playerChoice = this.id;
+    document.getElementById("playerChoice").innerText = playerChoice;
+    
     const computerChoice = computerSelect();
+    document.getElementById("computerChoice").innerText = computerChoice;    
 
     const result = getResult(playerChoice, computerChoice);
     displayResult(result);
