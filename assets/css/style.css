@@ -81,18 +81,17 @@ button:active {
     padding-top: 15px;
 }
 
+#result {
+    font-size: larger;
+}
+
 #resultBox {
-    font-size: xx-large;
-    font-weight: bolder;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-top: 20px;
     background: aqua;
+    border-radius: 30px;
     width: 40vw;
-    height: 20vh;
+    height: fit-content;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
-    text-transform: uppercase;
-    border-radius: 30px;
+    padding: 10px 0 10px 0;
+    font-size: large;
 }

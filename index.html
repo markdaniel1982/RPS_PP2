@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,25 +11,31 @@
 
     <title>Rock Paper Scissors Game</title>
 </head>
+
 <body>
     <header>
-    <h1><img src="assets/images/rock-paper-scissors.webp" alt="rock paper scissors logo"> Rock Paper Scissors <img src="assets/images/rock-paper-scissors.webp" alt="rock paper scissors logo"></h1>
-        </header>
+        <h1><img src="assets/images/rock-paper-scissors.webp" alt="rock paper scissors logo"> Rock Paper Scissors <img
+                src="assets/images/rock-paper-scissors.webp" alt="rock paper scissors logo"></h1>
+    </header>
     <div id="gameArea">
         <h2>Make your move...</h2>
         <div id="buttonBox">
             <button id="rock"><i class="fa-regular fa-hand-back-fist"></i></button>
-        <button id="paper"><i class="fa-regular fa-hand"></i></button>
-        <button id="scissors"><i class="fa-regular fa-hand-scissors"></i></button>
-    </div>
-    <div id="displayChoices">
-        <div id="playerChoiceArea">You chose: <span id="playerChoice"></span></div>
-        <div id="computerChoiceArea">Computer chose: <span id="computerChoice"></span></div>
-    </div>
-    <div id="resultBox">Result: <div id="result"></div></div>
-    
+            <button id="paper"><i class="fa-regular fa-hand"></i></button>
+            <button id="scissors"><i class="fa-regular fa-hand-scissors"></i></button>
+        </div>
+        <div id="displayChoices">
+            <div id="playerChoiceArea">You chose: <span id="playerChoice"></span></div>
+            <div id="computerChoiceArea">Computer chose: <span id="computerChoice"></span></div>
+        </div>
+        <div id="resultBox">Result: 
+            <div id="result"></div>
+            <div id="remaining">Moves Left: <span id="movesLeft">0</span></div>
+        </div>
 
-    <script src="https://kit.fontawesome.com/a42140e177.js" crossorigin="anonymous"></script>
-    <script src="assets/script/script.js"></script>
+
+        <script src="https://kit.fontawesome.com/a42140e177.js" crossorigin="anonymous"></script>
+        <script src="assets/script/script.js"></script>
 </body>
+
 </html>

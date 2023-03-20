@@ -41,8 +41,6 @@ function getResult(playerChoice, computerChoice) {
     }
 }
 
-
-
 function displayResult(result){
     const resultElement = document.getElementById("result");
     resultElement.innerText = result;
