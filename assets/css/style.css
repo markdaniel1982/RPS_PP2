@@ -19,6 +19,7 @@ header {
 
 header h1 {
     padding-bottom: 15px;
+    text-transform: uppercase;
 }
 
 header img {
@@ -69,12 +70,23 @@ button:active {
     border-width: 10px;
 }
 
+#displayChoices {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    height: 20vh;
+}
+
+#displayChoice,  div {
+    padding-top: 15px;
+}
+
 #result {
     margin-top: 20px;
     margin-bottom: 20px;
     padding-top: 20px;
     background: aqua;
-    width: 80vw;
+    width: 40vw;
     height: 20vh;
     margin-left: auto;
     margin-right: auto;
