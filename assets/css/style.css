@@ -13,7 +13,7 @@ body {
 
 header {
     text-align: center;
-    font-size: x-large; 
+    font-size: x-large;
     line-height: 30px;
 }
 
@@ -85,7 +85,8 @@ button:hover {
     height: 20vh;
 }
 
-#displayChoice,  div {
+#displayChoice,
+div {
     padding-top: 15px;
 }
 
