@@ -1,3 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
 body {
+    font-family: Montserrat, sans-serif;
     background: blue;
+}
+
+header {
+    text-align: center;
+    font-size: x-large;    
+    line-height: 30px;
+}
+
+header h1 {
+    padding-bottom: 15px;
+}
+
+header img {
+    height: 50px;
+    width: 50px;
+    padding-top: 15px;
+}
+
+#gameArea {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    background: aqua;
+    width: 80vw;
+    height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+
+h2 {
+    font-weight: bold;
+    padding: 20px 0 40px 0;
+    letter-spacing: 1px;
+}
+
+#buttonBox {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    font-size: 60px;
+    height: 125px;
+    width: 125px;
+    background-color: chartreuse;
+    border: yellowgreen;
+    border-style: outset;
+    border-width: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+button:active {
+    border-style: inset;
+    border-width: 10px;
+}
+
+#result {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    background: aqua;
+    width: 80vw;
+    height: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 30px;
 }
