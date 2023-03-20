@@ -9,20 +9,18 @@
 body {
     font-family: Montserrat, sans-serif;
     background: blue;
-    background-image: linear-gradient();
 }
 
 header {
     text-align: center;
     font-size: x-large; 
     line-height: 30px;
-    text-shadow: 1px 1px aqua;
-
 }
 
 header h1 {
     padding-bottom: 15px;
     text-transform: uppercase;
+    text-shadow: 1px 1px 4px aqua, -1px -1px 20px aqua, -1px -1px 16px aqua, 1px 0px 11px aqua;
 }
 
 header img {
