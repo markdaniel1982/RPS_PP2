@@ -9,12 +9,15 @@
 body {
     font-family: Montserrat, sans-serif;
     background: blue;
+    background-image: linear-gradient();
 }
 
 header {
     text-align: center;
-    font-size: x-large;    
+    font-size: x-large; 
     line-height: 30px;
+    text-shadow: 1px 1px aqua;
+
 }
 
 header h1 {
@@ -40,6 +43,7 @@ header img {
     text-align: center;
     text-transform: uppercase;
     border-radius: 30px;
+    text-shadow: 1px 1px blue;
 }
 
 h2 {
@@ -63,11 +67,17 @@ button {
     border-width: 10px;
     border-radius: 15px;
     cursor: pointer;
+
+
 }
 
 button:active {
     border-style: inset;
     border-width: 10px;
+}
+
+button:hover {
+    text-shadow: 2px 2px yellowgreen;
 }
 
 #displayChoices {
