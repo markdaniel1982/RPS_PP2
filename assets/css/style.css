@@ -105,15 +105,9 @@ div {
     font-size: large;
 }
 
-#playAgain {
-    visibility: collapse;
-    font-size: 60px;
-    height: 125px;
-    width: 125px;
-    background-color: chartreuse;
-    border: yellowgreen;
-    border-style: outset;
-    border-width: 10px;
-    border-radius: 15px;
-    cursor: pointer;
+#playagain {
+    visibility: hidden;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
 }

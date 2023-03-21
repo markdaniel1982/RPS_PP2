@@ -15,12 +15,12 @@ document.addEventListener("DOMContentLoaded", function () {
         button.onclick = function () {
             count -= 1;
             movesLeft.innerHTML = count;
-        };
 
-        if (count === 0) {
-            document.getElementById("playAgain").style.display = "true", playGame();
-           
-        }
+            if (count < 1) {
+                alert ("Play Again?")
+                playAgain(window.location.reload());
+            }
+        };
     }
 });
 
@@ -60,4 +60,8 @@ function getResult(playerChoice, computerChoice) {
 function displayResult(result) {
     const resultElement = document.getElementById("result");
     resultElement.innerText = result;
+}
+
+function playAgain() {
+    window.location.reload();
 }
