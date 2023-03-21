@@ -4,21 +4,37 @@
 //Code Credit - 
 document.addEventListener("DOMContentLoaded", function () {
     const buttons = document.querySelectorAll("button");
-console.log("DOM Loaded")
+    console.log("DOM Loaded")
     for (const button of buttons) {
         button.addEventListener("click", playGame);
+
+        let movesLeft = document.getElementById("movesLeft")
+        count = 5;
+        movesLeft.innerHTML = count;
+
+        button.onclick = function () {
+            count -= 1;
+            movesLeft.innerHTML = count;
+        };
+
+        if (count === 0) {
+            document.getElementById("playAgain").style.display = "true", playGame();
+           
+        }
     }
 });
 
 function playGame() {
     const playerChoice = this.id;
     document.getElementById("playerChoice").innerText = playerChoice;
-    
+
     const computerChoice = computerSelect();
-    document.getElementById("computerChoice").innerText = computerChoice;    
+    document.getElementById("computerChoice").innerText = computerChoice;
 
     const result = getResult(playerChoice, computerChoice);
     displayResult(result);
+
+
 }
 
 function computerSelect() {
@@ -32,7 +48,7 @@ function getResult(playerChoice, computerChoice) {
         return "Draw!";
     } else if (
         (playerChoice === "rock" && computerChoice === "scissors") ||
-        (playerChoice === "paper" && computerChoice === "rock") || 
+        (playerChoice === "paper" && computerChoice === "rock") ||
         (playerChoice === "scissors" && computerChoice === "paper")
     ) {
         return "Winner!";
@@ -41,7 +57,7 @@ function getResult(playerChoice, computerChoice) {
     }
 }
 
-function displayResult(result){
+function displayResult(result) {
     const resultElement = document.getElementById("result");
     resultElement.innerText = result;
 }
