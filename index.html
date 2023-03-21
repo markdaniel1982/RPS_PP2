@@ -17,24 +17,29 @@
         <h1><img src="assets/images/rock-paper-scissors.webp" alt="rock paper scissors logo"> Rock Paper Scissors <img
                 src="assets/images/rock-paper-scissors.webp" alt="rock paper scissors logo"></h1>
     </header>
-    
-       
-        <div id="gameArea">
-            <h2>Make your move...</h2>
-            <div id="buttonBox">
-                <button id="rock" class="btn"><i class="fa-regular fa-hand-back-fist"></i></button>
-                <button id="paper" class="btn"><i class="fa-regular fa-hand"></i></button>
-                <button id="scissors" class="btn"><i class="fa-regular fa-hand-scissors"></i></button>
-            </div>
-            <div id="displayChoices">
-                <div id="playerChoiceArea">You chose : <span id="playerChoice"></span></div>
-                <div id="computerChoiceArea">Computer chose : <span id="computerChoice"></span></div>
-            </div>
-            <div id="resultBox">Result :
-                <div id="logwin"></div><div id="result"></div>
-                <div id="remaining">Moves Left: <span id="movesLeft"></span></div>
-            </div>
+    <div id="playAgain" hidden onclick="location.reload()">
+        <!-- <div class="container-popup"></div> -->
+        <div class="popup">
+            <span id="close"><button type="button" onclick="window.location.reload()">Play Again?</button></span>
         </div>
+    </div>
+    <div id="gameArea">
+        <h2>Make your move...</h2>
+        <div id="buttonBox">
+            <button id="rock" class="btn"><i class="fa-regular fa-hand-back-fist"></i></button>
+            <button id="paper" class="btn"><i class="fa-regular fa-hand"></i></button>
+            <button id="scissors" class="btn"><i class="fa-regular fa-hand-scissors"></i></button>
+        </div>
+        <div id="displayChoices">
+            <div id="playerChoiceArea">You chose : <span id="playerChoice"></span></div>
+            <div id="computerChoiceArea">Computer chose : <span id="computerChoice"></span></div>
+        </div>
+        <div id="resultBox">Result :
+            <div id="logwin"></div>
+            <div id="result"></div>
+            <div id="remaining">Moves Left: <span id="movesLeft"></span></div>
+        </div>
+    </div>
     <script src="https://kit.fontawesome.com/a42140e177.js" crossorigin="anonymous"></script>
     <script src="assets/script/script.js"></script>
 </body>

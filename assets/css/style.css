@@ -106,8 +106,30 @@ div {
 }
 
 #playagain {
-    visibility: hidden;
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.container-popup {
+    position: relative;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,.8);
+    z-index: 0;
+}
+.popup {
+    width: 50%;
+    height: 50%;
+    background: #1abcb9;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: 1;
 }

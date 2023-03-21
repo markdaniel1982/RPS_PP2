@@ -4,7 +4,7 @@
 //Code Credit - 
 document.addEventListener("DOMContentLoaded", function () {
     const buttons = document.querySelectorAll("button");
-    console.log("DOM Loaded")
+    console.log("DOM Loaded");
     for (const button of buttons) {
         button.addEventListener("click", playGame);
 
@@ -16,9 +16,11 @@ document.addEventListener("DOMContentLoaded", function () {
             count -= 1;
             movesLeft.innerHTML = count;
 
-            if (count < 1) {
-                alert ("Play Again?")
-                playAgain(window.location.reload());
+            if (count === 0) {
+                document.getElementById("playAgain").hidden = false;
+                (playAgain());                
+            } else {
+                document.getElementById("playAgain").hidden = true;
             }
         };
     }
@@ -63,5 +65,5 @@ function displayResult(result) {
 }
 
 function playAgain() {
-    window.location.reload();
+
 }
