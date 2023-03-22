@@ -8,34 +8,43 @@
 
 body {
     font-family: Montserrat, sans-serif;
-    background: blue;
+    background: rgb(2, 2, 82);
 }
 
 header {
+    color: rgb(2, 2, 82);
     text-align: center;
     font-size: x-large;
     line-height: 30px;
 }
 
 header h1 {
-    padding-bottom: 15px;
+    padding-top: 3%;
+    padding-bottom: 2%;
     text-transform: uppercase;
     text-shadow: 1px 1px 4px aqua, -1px -1px 20px aqua, -1px -1px 16px aqua, 1px 0px 11px aqua;
 }
 
-header img {
-    height: 50px;
-    width: 50px;
-    padding-top: 15px;
-}
 
 #gameArea {
     margin-top: 20px;
     margin-bottom: 20px;
     padding-top: 20px;
     background: aqua;
-    width: 80vw;
-    height: 50vh;
+    width: 60vw;
+    height: 40vh;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 30px;
+    text-shadow: 1px 1px blue;
+}
+
+#resultsArea {
+    background: aqua;
+    width: 40vw;
+    height: fit-content;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -46,7 +55,7 @@ header img {
 
 h2 {
     font-weight: bold;
-    padding: 20px 0 40px 0;
+    padding-bottom: 10px;
     letter-spacing: 1px;
 }
 
@@ -65,8 +74,6 @@ button {
     border-width: 10px;
     border-radius: 15px;
     cursor: pointer;
-
-
 }
 
 button:active {
@@ -87,7 +94,7 @@ button:hover {
 
 #displayChoice,
 div {
-    padding-top: 15px;
+    padding-top: 10px;
 }
 
 #result {
@@ -95,13 +102,7 @@ div {
 }
 
 #resultBox {
-    background: aqua;
-    border-radius: 30px;
-    width: 40vw;
-    height: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px 0 10px 0;
+    padding-bottom: 5%;
     font-size: large;
 }
 
@@ -113,9 +114,8 @@ div {
 
 /* CODE CREDIT - Overlay popup - https://findnerd.com/list/view/How-to-make-simple-Overlay-popup-/1966/ */
 .popup button {
-    position: relative;
-    bottom: 30px;
     margin-left: auto;
+    margin-top: -70px;
     margin-right: auto;
     font-size: xx-large;
 }
@@ -140,7 +140,7 @@ div {
 }
 
 .popup {
-    width: 40%;
+    width: 55%;
     height: 50%;
     background: #1ca29ee8;
     position: absolute;
@@ -150,10 +150,17 @@ div {
     left: 0;
     margin: auto;
     z-index: 1;
+    border-radius: 100px;
 }
 
 #winner {
     display: flex;
+    border-radius: 25px;
+    font-size: xx-large;
+    border-style: inset;
+    border-color: mediumpurple;
+    border-width: 10px;
+    font-weight: bolder;
     justify-content: space-around;
     align-items: center;
     margin-left: auto;
@@ -164,6 +171,7 @@ div {
 }
 
 #winCounter {
+    display: block;
     background-color: aqua;
     width: 200px;
     height: 50px;

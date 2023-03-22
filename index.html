@@ -14,14 +14,13 @@
 
 <body>
     <header>
-        <h1><img src="assets/images/rock-paper-scissors.webp" alt="rock paper scissors logo"> Rock Paper Scissors <img
-                src="assets/images/rock-paper-scissors.webp" alt="rock paper scissors logo"></h1>
+        <h1>Rock Paper Scissors</h1>
     </header>
     <!-- CODE CREDIT - Overlay popup - https://findnerd.com/list/view/How-to-make-simple-Overlay-popup-/1966/ -->
     <div id="playAgain" hidden onclick="location.reload()">
         <!-- <div class="container-popup"></div> -->
         <div class="popup">
-            <div >You're a ... <span id="winner"></span></div>
+            <div ><span id="winner"></span></div>
             <span id="close"><button type="button" onclick="window.location.reload()">Play Again?</button></span>
         </div>
     </div>
@@ -36,10 +35,12 @@
             <div id="playerChoiceArea">You chose : <span id="playerChoice"></span></div>
             <div id="computerChoiceArea">Computer chose : <span id="computerChoice"></span></div>
         </div>
+    </div>
+    <div id="resultsArea">
         <div id="winCounter">
             You: <span id="winCount">0</span>
             Computer: <span id="lossCount">0</span>
-            <div >Draw: <span id="drawCount">0</span></div>
+            Draw: <span id="drawCount">0</span>
         </div>
         <div id="resultBox">Result :
             <div id="result"></div>

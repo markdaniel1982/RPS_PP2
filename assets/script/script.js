@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     const buttons = document.querySelectorAll("button");
-    console.log("DOM Loaded");
 
     for (const button of buttons) {
         button.addEventListener("click", playGame);
