@@ -87,6 +87,14 @@ document.addEventListener("DOMContentLoaded", function () {
         } else if (
             numLoss > numWins && numDraw > numWins) {
             overallWinner.innerText = "LOSER"
+        } else if (
+            numWins === numDraw && numDraw > numLoss) {
+            overallWinner.innerText = "WINNER"
+        } else if (
+            numWins > numLoss) {
+            overallWinner.innerText = "WINNER"
+        } else if (numLoss > numWins) {
+            overallWinner.innerText = "LOSER"
         } else(
             overallWinner.innerText = "DRAW"
         )
