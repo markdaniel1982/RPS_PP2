@@ -90,10 +90,7 @@ button:hover {
     height: 20vh;
 }
 
-#displayChoice,
-div {
-    padding-top: 10px;
-}
+
 
 #result {
     font-size: larger;
@@ -169,12 +166,34 @@ div {
 }
 
 #winCounter {
-    margin-bottom: 10px;
+    padding-top: 1vh;
+    margin-bottom: 1vh;
     display: flex;
     flex-direction: column;
-
 }
 
-@media screen and (max-width: 916px) {
+#remaining, #result {
+    padding-top: 2vh;
+}
+
+@media screen and (max-width: 800px) {
     
+    #winner {
+        padding-top: 10px;
+        font-size: x-large;
+    }
+}
+
+@media screen and (max-width: 441px) {
+    
+    #displayChoices {
+        padding-top: 10px;
+        font-size: medium;
+    }
+
+    button {
+        height: 50px;
+        width: 50px;
+        font-size: 30px;
+    }
 }
