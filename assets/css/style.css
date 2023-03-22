@@ -105,10 +105,26 @@ div {
     font-size: large;
 }
 
-#playagain {
-    display: inline-block;
+#playAgain {
     margin-left: auto;
     margin-right: auto;
+    border-radius: 15px;
+}
+
+/* CODE CREDIT - Overlay popup - https://findnerd.com/list/view/How-to-make-simple-Overlay-popup-/1966/ */
+.popup button {
+
+    margin-left: auto;
+    margin-right: auto;
+    font-size: xx-large;
+}
+
+#close {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+
 }
 
 .container-popup {
@@ -118,13 +134,14 @@ div {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0,0,0,.8);
+    background: rgba(0, 0, 0, .8);
     z-index: 0;
 }
+
 .popup {
     width: 50%;
     height: 50%;
-    background: #1abcb9;
+    background: #1ca29ee8;
     position: absolute;
     top: 0;
     right: 0;
@@ -133,3 +150,4 @@ div {
     margin: auto;
     z-index: 1;
 }
+

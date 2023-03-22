@@ -45,7 +45,8 @@ function computerSelect() {
 }
 
 
-function getResult(playerChoice, computerChoice) {
+function getResult(playerChoice, computerChoice) {    
+
     if (playerChoice === computerChoice) {
         return "Draw!";
     } else if (
@@ -53,10 +54,11 @@ function getResult(playerChoice, computerChoice) {
         (playerChoice === "paper" && computerChoice === "rock") ||
         (playerChoice === "scissors" && computerChoice === "paper")
     ) {
-        return "Winner!";
+        return "Winner!"
     } else {
         return "You Lost!";
     }
+
 }
 
 function displayResult(result) {
