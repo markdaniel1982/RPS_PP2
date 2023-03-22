@@ -136,6 +136,7 @@ button:hover {
 .popup {
     width: 55%;
     height: 80vh;
+    padding-top: 5vh;
     background: #1ca29ee8;
     position: absolute;
     top: 50px;
