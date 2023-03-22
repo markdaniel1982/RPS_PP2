@@ -27,12 +27,11 @@ header h1 {
 
 
 #gameArea {
-    margin-top: 20px;
     margin-bottom: 20px;
     padding-top: 20px;
     background: aqua;
     width: 60vw;
-    height: 40vh;
+    height: 35vh;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -43,7 +42,7 @@ header h1 {
 
 #resultsArea {
     background: aqua;
-    width: 40vw;
+    width: 30vw;
     height: fit-content;
     margin-left: auto;
     margin-right: auto;
@@ -66,6 +65,7 @@ h2 {
 
 button {
     font-size: 60px;
+    color: rgb(2, 2, 82);
     height: 125px;
     width: 125px;
     background-color: chartreuse;
@@ -82,12 +82,10 @@ button:active {
 }
 
 button:hover {
-    text-shadow: 2px 2px yellowgreen;
+    text-shadow: 2px 2px aqua;
 }
 
 #displayChoices {
-    margin-top: 10px;
-    margin-bottom: 10px;
     padding-top: 10px;
     height: 20vh;
 }
@@ -115,7 +113,6 @@ div {
 /* CODE CREDIT - Overlay popup - https://findnerd.com/list/view/How-to-make-simple-Overlay-popup-/1966/ */
 .popup button {
     margin-left: auto;
-    margin-top: -70px;
     margin-right: auto;
     font-size: xx-large;
 }
@@ -141,10 +138,10 @@ div {
 
 .popup {
     width: 55%;
-    height: 50%;
+    height: 80vh;
     background: #1ca29ee8;
     position: absolute;
-    top: 0;
+    top: 50px;
     right: 0;
     bottom: 0;
     left: 0;
@@ -155,28 +152,29 @@ div {
 
 #winner {
     display: flex;
+    text-shadow: 1px 1px 4px aqua, -1px -1px 20px aqua, -1px -1px 16px aqua, 1px 0px 11px aqua;
     border-radius: 25px;
-    font-size: xx-large;
+    font-size: xxx-large;
     border-style: inset;
-    border-color: mediumpurple;
+    border-color: rgb(2, 2, 82);
     border-width: 10px;
     font-weight: bolder;
     justify-content: space-around;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    height: 100px;
-    width: 200px;
+    height: 20vh;
+    width: 40vw;
     background-color: chartreuse;
 }
 
 #winCounter {
-    display: block;
-    background-color: aqua;
-    width: 200px;
-    height: 50px;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 10px;
-    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+@media screen and (max-width: 916px) {
+    
 }
