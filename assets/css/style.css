@@ -113,7 +113,8 @@ div {
 
 /* CODE CREDIT - Overlay popup - https://findnerd.com/list/view/How-to-make-simple-Overlay-popup-/1966/ */
 .popup button {
-
+    position: relative;
+    bottom: 30px;
     margin-left: auto;
     margin-right: auto;
     font-size: xx-large;
@@ -139,7 +140,7 @@ div {
 }
 
 .popup {
-    width: 50%;
+    width: 60%;
     height: 50%;
     background: #1ca29ee8;
     position: absolute;
@@ -151,3 +152,23 @@ div {
     z-index: 1;
 }
 
+#winner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    width: 200px;
+    background-color: chartreuse;
+}
+
+#winCounter {
+    background-color: aqua;
+    width: 200px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
