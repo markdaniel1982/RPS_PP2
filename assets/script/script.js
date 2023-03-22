@@ -35,8 +35,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const winner = whoWon(numWins, numLoss, numDraw);
         document.getElementById("winner");
-
-
     }
 
     function computerSelect() {
@@ -70,7 +68,6 @@ document.addEventListener("DOMContentLoaded", function () {
             lossCount.innerText = numLoss;
             return "You Lost!";
         }
-
     }
 
     function displayResult(result) {
@@ -88,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (numWins > numLoss && numWins > numDraw) {
             overallWinner.innerText = "WINNER"
         } else if (
-            numLoss > numWins && numLoss > numDraw) {
+            numLoss > numWins && numDraw > numWins) {
             overallWinner.innerText = "LOSER"
         } else(
             overallWinner.innerText = "DRAW"
