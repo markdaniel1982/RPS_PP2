@@ -21,7 +21,7 @@
     <div id="playAgain" hidden onclick="location.reload()">
         <!-- <div class="container-popup"></div> -->
         <div class="popup">
-            <span id="winner"></span>
+            <div >You're a ... <span id="winner"></span></div>
             <span id="close"><button type="button" onclick="window.location.reload()">Play Again?</button></span>
         </div>
     </div>
@@ -36,8 +36,12 @@
             <div id="playerChoiceArea">You chose : <span id="playerChoice"></span></div>
             <div id="computerChoiceArea">Computer chose : <span id="computerChoice"></span></div>
         </div>
+        <div id="winCounter">
+            You: <span id="winCount">0</span>
+            Computer: <span id="lossCount">0</span>
+            Draw: <span id="drawCount" >0</span>
+        </div>
         <div id="resultBox">Result :
-            <div id="logwin"></div>
             <div id="result"></div>
             <div id="remaining">Moves Left: <span id="movesLeft"></span></div>
         </div>

@@ -3,20 +3,31 @@
 // code credit - CI Love Maths walkthrough (dom content loaded)
 //Code Credit - 
 document.addEventListener("DOMContentLoaded", function () {
+
+    let numWins = 0;
+    let numLoss = 0;
+    let numDraw = 0;
+
+    let winCount = document.getElementById("winCount")
+    let lossCount = document.getElementById("lossCount")
+    let drawCount = document.getElementById("drawCount")
+
+    let movesLeft = document.getElementById("movesLeft")
+
     const buttons = document.querySelectorAll("button");
     console.log("DOM Loaded");
     for (const button of buttons) {
         button.addEventListener("click", playGame);
 
-        let movesLeft = document.getElementById("movesLeft")
-        count = 5;
-        movesLeft.innerHTML = count;
+
+        roundCount = 5;
+        movesLeft.innerHTML = roundCount;
 
         button.onclick = function () {
-            count -= 1;
-            movesLeft.innerHTML = count;
+            roundCount -= 1;
+            movesLeft.innerHTML = roundCount;
 
-            if (count === 0) {
+            if (roundCount === 0) {
                 document.getElementById("playAgain").hidden = false;
                 (playAgain());                
             } else {
@@ -24,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         };
     }
-});
+
 
 function playGame() {
     const playerChoice = this.id;
@@ -48,14 +59,20 @@ function computerSelect() {
 function getResult(playerChoice, computerChoice) {    
 
     if (playerChoice === computerChoice) {
+        numDraw++;
+        drawCount.innerText = numDraw;
         return "Draw!";
     } else if (
         (playerChoice === "rock" && computerChoice === "scissors") ||
         (playerChoice === "paper" && computerChoice === "rock") ||
         (playerChoice === "scissors" && computerChoice === "paper")
     ) {
+        numWins++;
+        winCount.innerText = numWins;
         return "Winner!"
     } else {
+        numLoss++;
+        lossCount.innerText = numLoss;
         return "You Lost!";
     }
 
@@ -69,3 +86,5 @@ function displayResult(result) {
 function playAgain() {
 
 }
+
+});
