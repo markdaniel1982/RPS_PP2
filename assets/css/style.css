@@ -177,12 +177,17 @@ button:hover {
     padding-top: 2vh;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 920px) {
     
+    .popup {
+        width: 85vw;
+    }
+
     #winner {
         padding-top: 10px;
         font-size: x-large;
     }
+
 }
 
 @media screen and (max-width: 441px) {
