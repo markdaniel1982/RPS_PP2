@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
             numWins++;
             movesLeft.innerHTML = roundCount;
             winCount.innerText = numWins;
-            return "Winner!"
+            return "Winner!";
         } else {
             roundCount--;
             numLoss++;
@@ -82,24 +82,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function whoWon(numWins, numLoss, numDraw) {
         if (numWins > numLoss && numWins > numDraw) {
-            overallWinner.innerText = "WINNER"
+            overallWinner.innerText = "WINNER";
         } else if (
             numLoss > numWins && numDraw > numWins) {
-            overallWinner.innerText = "LOSER"
+            overallWinner.innerText = "LOSER";
         } else if (
             numWins === numDraw && numDraw > numLoss) {
-            overallWinner.innerText = "WINNER"
+            overallWinner.innerText = "WINNER";
         } else if (
             numWins > numLoss) {
-            overallWinner.innerText = "WINNER"
+            overallWinner.innerText = "WINNER";
         } else if (numLoss > numWins) {
-            overallWinner.innerText = "LOSER"
+            overallWinner.innerText = "LOSER";
         } else(
             overallWinner.innerText = "DRAW"
-        )
+        );
     }
 
     function playAgain() {
 
     }
-})
+}
+);
