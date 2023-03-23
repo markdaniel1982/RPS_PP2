@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const result = getResult(playerChoice, computerChoice);
         displayResult(result);
 
-        const winner = whoWon(numWins, numLoss, numDraw);
+        winner = whoWon(numWins, numLoss, numDraw);
         document.getElementById("winner");
     }
 // Computers Selection

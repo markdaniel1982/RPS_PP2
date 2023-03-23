@@ -90,7 +90,7 @@ _______
 
 The site was created in gitpod, and pushed to github to make it publicly accessible using the following commands in the terminal:
 
-  * git add .
+  * git add  .
   * git commit -m "Description of updates since last commit"
   * git push
 
