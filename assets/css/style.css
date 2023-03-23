@@ -31,7 +31,7 @@ header h1 {
     padding-top: 20px;
     background: aqua;
     width: 60vw;
-    height: 35vh;
+    height: 45vh;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -122,17 +122,6 @@ button:hover {
 
 }
 
-.container-popup {
-    position: relative;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, .8);
-    z-index: 0;
-}
-
 .popup {
     width: 55%;
     height: 80vh;
@@ -177,8 +166,12 @@ button:hover {
     padding-top: 2vh;
 }
 
-@media screen and (max-width: 920px) {
-    
+@media (max-width: 920px) {
+
+    #gameArea {
+         height: 40vh;
+    }
+        
     .popup {
         width: 85vw;
     }
@@ -190,7 +183,22 @@ button:hover {
 
 }
 
-@media screen and (max-width: 500px) {
+@media (max-width: 578px) {
+    h1 {
+        font-size: xx-large;
+    }
+}
+
+@media (max-width: 500px) {
+
+    #gameArea {
+        width: 90vw;
+    }
+
+    #resultsArea {
+        width: 90vw;
+        height: fit-content;
+    }
 
     header {
         font-size: large;

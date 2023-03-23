@@ -3,7 +3,7 @@
 // code credit - CI Love Maths walkthrough (dom content loaded)
 //Code Credit - 
 document.addEventListener("DOMContentLoaded", function () {
-
+// Setting global variables for the game
     let numWins = 0;
     let numLoss = 0;
     let numDraw = 0;
@@ -15,13 +15,13 @@ document.addEventListener("DOMContentLoaded", function () {
     let movesLeft = document.getElementById("movesLeft");
     let overallWinner = document.getElementById("winner");
 
-
+// Set event listener to buttons 
     const buttons = document.querySelectorAll("button");
 
     for (const button of buttons) {
         button.addEventListener("click", playGame);
     }
-
+// Main game functionality - User choice and winner calculation
     function playGame() {
         const playerChoice = this.id;
         document.getElementById("playerChoice").innerText = playerChoice;
@@ -35,13 +35,13 @@ document.addEventListener("DOMContentLoaded", function () {
         const winner = whoWon(numWins, numLoss, numDraw);
         document.getElementById("winner");
     }
-
+// Computers Selection
     function computerSelect() {
         const choices = ["rock", "paper", "scissors"];
         return choices[Math.floor(Math.random() * 3)];
     }
 
-
+// Calculate winner and update rounds left, number of wins etc
     function getResult(playerChoice, computerChoice) {
 
         if (playerChoice === computerChoice) {
@@ -69,6 +69,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+// Display popup
+
     function displayResult(result) {
         const resultElement = document.getElementById("result");
         resultElement.innerText = result;
@@ -79,6 +81,8 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("playAgain").hidden = true;
         }
     }
+
+// Display winner
 
     function whoWon(numWins, numLoss, numDraw) {
         if (numWins > numLoss && numWins > numDraw) {
@@ -98,6 +102,8 @@ document.addEventListener("DOMContentLoaded", function () {
             overallWinner.innerText = "DRAW"
         );
     }
+
+// Play Again?
 
     function playAgain() {
 

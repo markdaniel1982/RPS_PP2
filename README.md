@@ -64,7 +64,7 @@ The only issues here were some semicolons missing, which have now been added.
 
 ### Responsivity
 The site's responsivity was tested using DevTools in Google Chrome. Media queries have been set for tablets and mobile devices (see image at top of readme)
-
+_____
 
 ### Lighthouse
 * Desktop
@@ -84,6 +84,8 @@ Once the game function was built (see code credits), I had issues trying to get 
 
 There are no unresolved bugs
 
+_______
+
 ## Deployment
 
 The site was created in gitpod, and pushed to github to make it publicly accessible using the following commands in the terminal:
@@ -97,15 +99,16 @@ The site was created in gitpod, and pushed to github to make it publicly accessi
 _____
 
 ## Credits
+
 Game layout - I took the main code structure from here, but as it is a very simple version, I added in extra features of displaying selection made each round, a count of the wins/losses/draws and calculating and displaying the overall winner - https://www.geeksforgeeks.org/rock-paper-and-scissor-game-using-javascript/
 
+Also, a very big thank you to Slack user Tony Albanese who helped point me in the right direction when I was unable to correctly code the round countdown and overall winner.
+
 ### Code
+
 CI Love Maths walkthrough (dom content loaded)
 
-
-
 Overlay popup (used but amended in places to suit my project)- https://findnerd.com/list/view/How-to-make-simple-Overlay-popup-/1966/
-
 
 
 ### Fonts and Icons 
