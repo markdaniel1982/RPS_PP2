@@ -166,6 +166,20 @@ button:hover {
     padding-top: 2vh;
 }
 
+footer {
+    height: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    text-shadow: 1px 1px 4px aqua, -1px -1px 20px aqua, -1px -1px 16px aqua, 1px 0px 11px aqua;
+    text-decoration: none;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
 @media (max-width: 920px) {
 
     #gameArea {
