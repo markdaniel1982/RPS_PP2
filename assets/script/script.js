@@ -1,9 +1,12 @@
 // wait for DOM to load before running the game
 
-// code credit - CI Love Maths walkthrough (dom content loaded)
-//Code Credit - Game idea based on - https://www.geeksforgeeks.org/rock-paper-and-scissor-game-using-javascript/
+// CODE CREDIT - CI Love Maths walkthrough (dom content loaded)
+// CODE CREDIT - Game idea based on - https://www.geeksforgeeks.org/rock-paper-and-scissor-game-using-javascript/
+
 document.addEventListener("DOMContentLoaded", function () {
+
 // Setting global variables for the game
+
     let numWins = 0;
     let numLoss = 0;
     let numDraw = 0;
@@ -15,13 +18,15 @@ document.addEventListener("DOMContentLoaded", function () {
     let movesLeft = document.getElementById("movesLeft");
     let overallWinner = document.getElementById("winner");
 
-// Set event listener to buttons 
+// Set event listener for buttons 
+
     const buttons = document.querySelectorAll("button");
 
     for (const button of buttons) {
         button.addEventListener("click", playGame);
     }
 // Main game functionality - User choice and winner calculation
+
     function playGame() {
         const playerChoice = this.id;
         document.getElementById("playerChoice").innerText = playerChoice;
@@ -35,13 +40,19 @@ document.addEventListener("DOMContentLoaded", function () {
         winner = whoWon(numWins, numLoss, numDraw);
         document.getElementById("winner");
     }
+
 // Computers Selection
+
     function computerSelect() {
         const choices = ["rock", "paper", "scissors"];
         return choices[Math.floor(Math.random() * 3)];
     }
 
 // Calculate winner and update rounds left, number of wins etc
+
+// CODE CREDIT - Round counter (movesLeft) taken from https://contactmentor.com/js-increment-counter-button-click/ 
+// & https://stackoverflow.com/questions/47463377/click-counter-not-working
+
     function getResult(playerChoice, computerChoice) {
 
         if (playerChoice === computerChoice) {
@@ -70,6 +81,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 // Display popup
+
+// CODE CREDIT - Overlay popup - https://findnerd.com/list/view/How-to-make-simple-Overlay-popup-/1966/
 
     function displayResult(result) {
         const resultElement = document.getElementById("result");
