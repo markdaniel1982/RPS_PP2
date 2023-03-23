@@ -1,7 +1,7 @@
 // wait for DOM to load before running the game
 
 // code credit - CI Love Maths walkthrough (dom content loaded)
-//Code Credit - 
+//Code Credit - Game idea based on - https://www.geeksforgeeks.org/rock-paper-and-scissor-game-using-javascript/
 document.addEventListener("DOMContentLoaded", function () {
 // Setting global variables for the game
     let numWins = 0;
