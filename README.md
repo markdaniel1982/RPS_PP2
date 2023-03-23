@@ -106,7 +106,11 @@ Also, a very big thank you to Slack user Tony Albanese who helped point me in th
 
 ### Code
 
-CI Love Maths walkthrough (dom content loaded)
+CI Love Maths walkthrough (dom content loaded) and general structure of code
+
+Round counter used code and inspiration from:
+ * https://contactmentor.com/js-increment-counter-button-click/
+ * https://stackoverflow.com/questions/47463377/click-counter-not-working
 
 Overlay popup (used but amended in places to suit my project)- https://findnerd.com/list/view/How-to-make-simple-Overlay-popup-/1966/
 
