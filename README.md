@@ -115,7 +115,9 @@ _____
 
 ## Credits
 
-Game layout - I took the main code structure from here, but as it is a very simple version, I added in extra features of displaying selection made each round, a count of the wins/losses/draws and calculating and displaying the overall winner.
+### Game layout
+
+I took the main code structure from here, but as it is a very simple version, I added in extra features of displaying the selection made each round, a count of the wins/losses/draws and calculating and displaying the overall winner.
  * https://www.geeksforgeeks.org/rock-paper-and-scissor-game-using-javascript/
 
 Also, a very big thank you to Slack user Tony Albanese who helped point me in the right direction when I was unable to correctly code the round countdown and overall winner.

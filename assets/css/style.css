@@ -30,11 +30,12 @@ header h1 {
     text-shadow: 1px 1px 4px aqua, -1px -1px 20px aqua, -1px -1px 16px aqua, 1px 0px 11px aqua;
 }
 
-a, a:visited {
+a,
+a:visited {
     text-decoration: none;
 }
 
-/* CODE CREDIT for modal and overlay (lines 37-130) https://www.freecodecamp.org/news/how-to-build-a-modal-with-javascript/ */
+/* CODE CREDIT for modal and overlay (lines 39-131) https://www.freecodecamp.org/news/how-to-build-a-modal-with-javascript/ */
 .modal {
     display: flex;
     flex-direction: column;
@@ -51,45 +52,45 @@ a, a:visited {
     border-radius: 15px;
     z-index: 5;
     color: rgb(2, 2, 82);
-  }
+}
 
-  .flexText {
+.flexText {
     padding: 1vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+}
 
-  .flexText h3 {
+.flexText h3 {
     padding-bottom: 2vh;
-  }
-  
-  .modal .flex {
+}
+
+.modal .flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-  
-  .modal input {
+}
+
+.modal input {
     padding: 0.7rem 1rem;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 0.9em;
-  }
-  
-  .modal p {
+}
+
+.modal p {
     font-size: 0.9rem;
     color: rgb(2, 2, 82);
     margin: 0.4rem 0 0.2rem;
-  }
-  
-  button {
+}
+
+button {
     cursor: pointer;
     border: none;
     font-weight: 600;
-  }
-  
-  .btn-open {
+}
+
+.btn-open {
     display: inline-block;
     padding: 0.8rem 1.4rem;
     font-weight: 700;
@@ -103,20 +104,20 @@ a, a:visited {
     top: 108px;
     left: 4vw;
     z-index: 2;
-  }
-  
-  .btn-close {
+}
+
+.btn-close {
     padding-top: 45px;
     border: rgb(2, 2, 82);
     border-width: 2px;
     text-decoration: underline;
-  }
+}
 
-  .hidden {
+.hidden {
     display: none;
-  }
+}
 
-  .overlay {
+.overlay {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -127,27 +128,15 @@ a, a:visited {
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(3px);
     z-index: 3;
-  }
+}
 
-  /* Game area styling */
+/* Game area styling */
 
 #gameArea {
     margin-bottom: 20px;
     padding-top: 20px;
     background: aqua;
     width: 60vw;
-    height: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    text-transform: uppercase;
-    border-radius: 30px;
-    text-shadow: 1px 1px blue;
-}
-
-#resultsArea {
-    background: aqua;
-    width: 40vw;
     height: fit-content;
     margin-left: auto;
     margin-right: auto;
@@ -196,6 +185,18 @@ button:hover {
 }
 
 /* Results Area Styling */
+
+#resultsArea {
+    background: aqua;
+    width: 40vw;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 30px;
+    text-shadow: 1px 1px blue;
+}
 
 #result {
     font-size: larger;
@@ -272,7 +273,8 @@ button:hover {
 }
 
 
-#remaining, #result {
+#remaining,
+#result {
     padding-top: 2vh;
 }
 
@@ -299,14 +301,15 @@ button:hover {
         position: relative;
         top: -50px;
     }
-   
-        
+
+
     .popup {
         width: 85vw;
         z-index: 6;
     }
 
-    .popup, btn {
+    .popup,
+    btn {
         height: 70vh;
     }
 
@@ -341,7 +344,7 @@ button:hover {
 
 @media (max-width: 500px) {
 
-        #gameArea {
+    #gameArea {
         width: 90vw;
     }
 
@@ -353,11 +356,11 @@ button:hover {
     header {
         font-size: large;
     }
-    
+
     .btn-open {
         z-index: 5;
     }
-        
+
     #displayChoices {
         padding-top: 10px;
         font-size: medium;

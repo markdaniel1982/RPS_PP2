@@ -26,7 +26,7 @@
             <span id="close"><button type="button" onclick="window.location.reload()">Play Again?</button></span>
         </div>
     </div>
-<!-- CODE CREDIT - https://www.freecodecamp.org/news/how-to-build-a-modal-with-javascript/ -->
+    <!-- CODE CREDIT - https://www.freecodecamp.org/news/how-to-build-a-modal-with-javascript/ -->
     <section class="modal hidden">
         <div class="flex">
         </div>
@@ -36,9 +36,10 @@
             </p>
             <p>You have 5 rounds. Whoever has the most wins.... wins!</p>
         </div>
-        <div class="btn-close"><p>Click to Close</p></div>        
+        <div class="btn-close">
+            <p>Click to Close</p>
+        </div>
     </section>
-
     <div class="overlay hidden"></div>
     <div class="btn-open">View Instructions</div>
 
@@ -60,6 +61,8 @@
         </div>
     </div>
     <div id="resultsArea">
+
+        <!-- CODE CREDIT Counters - https://contactmentor.com/js-increment-counter-button-click/ & https://stackoverflow.com/questions/47463377/click-counter-not-working-->
         <div id="winCounter">
             You: <span id="winCount">0 </span>
             Computer: <span id="lossCount">0 </span>
@@ -67,7 +70,6 @@
         </div>
         <div id="resultBox">Result :
             <div id="result"></div>
-
         </div>
     </div>
     <script src="https://kit.fontawesome.com/a42140e177.js" crossorigin="anonymous"></script>
