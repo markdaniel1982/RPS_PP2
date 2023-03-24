@@ -80,7 +80,7 @@ ___
 
 ### Errors & Debugging
 
-Once the game function was built (see code credits), I had issues trying to get the game counters, what selection was made and the result to display correctly. I sought help from a Slack user (Tony Albanese). He made suggestions to help tidy the code and get things into the correct order and scope so that each function was able to perform its tasks.
+Once the game function was built, I had issues trying to get the game counters, what selection was made and the result to display correctly. I sought help from a Slack user (Tony Albanese). He made suggestions to help tidy the code and get things into the correct order and scope so that each function was able to perform its tasks.
 
 
 #### Unresolved Bugs
@@ -111,14 +111,17 @@ Also, a very big thank you to Slack user Tony Albanese who helped point me in th
 
 CI Love Maths walkthrough (dom content loaded) and general structure of code
 
-Round counter used code and inspiration from:
+Round counter  code and inspiration 
  * https://contactmentor.com/js-increment-counter-button-click/
  * https://stackoverflow.com/questions/47463377/click-counter-not-working
 
-Overlay popup (used but amended in places to suit my project)- https://findnerd.com/list/view/How-to-make-simple-Overlay-popup-/1966/
+Overlay popup (used but amended in places to suit my project)
+ * https://findnerd.com/list/view/How-to-make-simple-Overlay-popup-/1966/
+
+Instruction Modal
+ * https://www.freecodecamp.org/news/how-to-build-a-modal-with-javascript/
 
 
-### Fonts and Icons 
- 
+### Fonts and Icons  
 * Fonts from Google fonts
 * Icons from Fontawesome

@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let overallWinner = document.getElementById("winner");
 
     // CODE CREDIT - https://www.freecodecamp.org/news/how-to-build-a-modal-with-javascript/
+    
     const modal = document.querySelector(".modal");
     const overlay = document.querySelector(".overlay");
     const openModalBtn = document.querySelector(".btn-open");
@@ -49,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
     for (const button of buttons) {
         button.addEventListener("click", playGame);
     }
+
     // Main game functionality - User choice and winner calculation
 
     function playGame() {
