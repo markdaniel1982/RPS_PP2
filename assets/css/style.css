@@ -25,6 +25,8 @@ header h1 {
     text-shadow: 1px 1px 4px aqua, -1px -1px 20px aqua, -1px -1px 16px aqua, 1px 0px 11px aqua;
 }
 
+
+/* CODE CREDIT for modal and overlay (lines 30-121) https://www.freecodecamp.org/news/how-to-build-a-modal-with-javascript/ */
 .modal {
     display: flex;
     flex-direction: column;
@@ -200,7 +202,7 @@ button:hover {
     border-radius: 15px;
 }
 
-/* CODE CREDIT - Overlay popup - https://findnerd.com/list/view/How-to-make-simple-Overlay-popup-/1966/ */
+/* CODE CREDIT - Overlay popup (lines 206-233) - https://findnerd.com/list/view/How-to-make-simple-Overlay-popup-/1966/ */
 .popup button {
     margin-left: auto;
     margin-right: auto;
@@ -266,9 +268,20 @@ a, a:visited {
 
 @media (max-width: 920px) {
 
-    #gameArea {
-         height: 40vh;
+    header h1 {
+        padding-bottom: 0.5%;
     }
+
+    #gameArea {
+        position: relative;
+        top: -50px;
+    }
+
+    #resultsArea {
+        position: relative;
+        top: -50px;
+    }
+   
         
     .popup {
         width: 85vw;
@@ -277,6 +290,23 @@ a, a:visited {
     #winner {
         padding-top: 10px;
         font-size: x-large;
+    }
+
+    .btn-open {
+        display: inline-block;
+        padding: 0.8rem 1.4rem;
+        font-weight: 700;
+        width: 100px;
+        height: 40px;
+        background-color: aqua;
+        color: rgb(2, 2, 82);
+        border-radius: 5px;
+        text-align: center;
+        font-size: 1em;
+        position: relative;
+        top: 700px;
+        left: 9vw;
+        z-index: 10;
     }
 
 }
@@ -300,8 +330,17 @@ a, a:visited {
 
     header {
         font-size: large;
-
     }
+
+    .modal {
+        width: 85vw;
+        top: 20vh
+    }
+
+    .btn-open {
+        z-index: 5;
+    }
+    
     
     #displayChoices {
         padding-top: 10px;

@@ -17,6 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
     let drawCount = document.getElementById("drawCount");
     let movesLeft = document.getElementById("movesLeft");
     let overallWinner = document.getElementById("winner");
+
+    // CODE CREDIT - https://www.freecodecamp.org/news/how-to-build-a-modal-with-javascript/
     const modal = document.querySelector(".modal");
     const overlay = document.querySelector(".overlay");
     const openModalBtn = document.querySelector(".btn-open");
