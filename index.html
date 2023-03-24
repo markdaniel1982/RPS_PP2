@@ -22,18 +22,37 @@
     <div id="playAgain" hidden onclick="location.reload()">
         <!-- <div class="container-popup"></div> -->
         <div class="popup">
-            <div ><span id="winner"></span></div>
+            <div><span id="winner"></span></div>
             <span id="close"><button type="button" onclick="window.location.reload()">Play Again?</button></span>
         </div>
     </div>
+
+    <section class="modal hidden">
+        <div class="flex">
+        </div>
+        <div class="flexText">
+            <h3>How to Play</h3>
+            <p>Make your choice of Rock, Paper or Scissors by clicking on the relevant button.
+            </p>
+            <p>You you have 5 rounds. Whoever has the most wins.... wins!</p>
+        </div>
+        <div class="btn-close"><p>Click to Close</p></div>
+        
+    </section>
+
+    <div class="overlay hidden"></div>
+    <div class="btn-open">View Instructions</div>
 
     <!-- CODE CREDIT - Game basis from https://www.geeksforgeeks.org/rock-paper-and-scissor-game-using-javascript/ -->
     <div id="gameArea">
         <h2>Make your move...</h2>
         <div id="buttonBox">
-            <button id="rock" class="btn" aria-label="Click to select Rock"><i class="fa-regular fa-hand-back-fist"></i></button>
-            <button id="paper" class="btn" aria-label="Click to select Paper"><i class="fa-regular fa-hand"></i></button>
-            <button id="scissors" class="btn" aria-label="Click to select Scissors"><i class="fa-regular fa-hand-scissors"></i></button>
+            <button id="rock" class="btn" aria-label="Click to select Rock"><i
+                    class="fa-regular fa-hand-back-fist"></i></button>
+            <button id="paper" class="btn" aria-label="Click to select Paper"><i
+                    class="fa-regular fa-hand"></i></button>
+            <button id="scissors" class="btn" aria-label="Click to select Scissors"><i
+                    class="fa-regular fa-hand-scissors"></i></button>
         </div>
         <div id="displayChoices">
             <div id="playerChoiceArea">You chose : <span id="playerChoice"></span></div>
@@ -49,7 +68,7 @@
         </div>
         <div id="resultBox">Result :
             <div id="result"></div>
-            
+
         </div>
     </div>
     <script src="https://kit.fontawesome.com/a42140e177.js" crossorigin="anonymous"></script>

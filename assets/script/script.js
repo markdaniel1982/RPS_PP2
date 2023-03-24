@@ -5,7 +5,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
 
-// Setting global variables for the game
+    // Setting global variables for the game
 
     let numWins = 0;
     let numLoss = 0;
@@ -17,15 +17,35 @@ document.addEventListener("DOMContentLoaded", function () {
     let drawCount = document.getElementById("drawCount");
     let movesLeft = document.getElementById("movesLeft");
     let overallWinner = document.getElementById("winner");
+    const modal = document.querySelector(".modal");
+    const overlay = document.querySelector(".overlay");
+    const openModalBtn = document.querySelector(".btn-open");
+    const closeModalBtn = document.querySelector(".btn-close");
 
-// Set event listener for buttons 
+    const openModal = function () {
+        modal.classList.remove("hidden");
+        overlay.classList.remove("hidden");
+      };
+
+      openModalBtn.addEventListener("mouseenter", openModal);
+
+      const closeModal = function () {
+        modal.classList.add("hidden");
+        overlay.classList.add("hidden");
+      };
+
+      closeModalBtn.addEventListener("click", closeModal);
+
+      overlay.addEventListener("click", closeModal);
+
+    // Set event listener for buttons 
 
     const buttons = document.querySelectorAll("button");
 
     for (const button of buttons) {
         button.addEventListener("click", playGame);
     }
-// Main game functionality - User choice and winner calculation
+    // Main game functionality - User choice and winner calculation
 
     function playGame() {
         const playerChoice = this.id;
@@ -41,17 +61,17 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("winner");
     }
 
-// Computers Selection
+    // Computers Selection
 
     function computerSelect() {
         const choices = ["rock", "paper", "scissors"];
         return choices[Math.floor(Math.random() * 3)];
     }
 
-// Calculate winner and update rounds left, number of wins etc
+    // Calculate winner and update rounds left, number of wins etc
 
-// CODE CREDIT - Round counter (movesLeft) taken from https://contactmentor.com/js-increment-counter-button-click/ 
-// & https://stackoverflow.com/questions/47463377/click-counter-not-working
+    // CODE CREDIT - Round counter (movesLeft) taken from https://contactmentor.com/js-increment-counter-button-click/ 
+    // & https://stackoverflow.com/questions/47463377/click-counter-not-working
 
     function getResult(playerChoice, computerChoice) {
 
@@ -80,9 +100,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-// Display popup
+    // Display popup
 
-// CODE CREDIT - Overlay popup - https://findnerd.com/list/view/How-to-make-simple-Overlay-popup-/1966/
+    // CODE CREDIT - Overlay popup - https://findnerd.com/list/view/How-to-make-simple-Overlay-popup-/1966/
 
     function displayResult(result) {
         const resultElement = document.getElementById("result");
@@ -95,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-// Display winner
+    // Display winner
 
     function whoWon(numWins, numLoss, numDraw) {
         if (numWins > numLoss && numWins > numDraw) {
@@ -116,10 +136,9 @@ document.addEventListener("DOMContentLoaded", function () {
         );
     }
 
-// Play Again?
+    // Play Again?
 
     function playAgain() {
 
     }
-}
-);
+});
