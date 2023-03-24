@@ -52,6 +52,13 @@ The second section shows the the total number of round wins, which counts from 0
 After the game and results section were built, i decided to add a modal to allow users to see how to play the game. this is positioned to the top left of the game area on desktop devices and below the results section on smaller devices
 ____
 
+## Technologies
+### Languages
+ * [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5) provides the content and structure of the site.
+ * [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS) is used to add styling to the pages. The stylesheet is connected via a link in the head of the HTML.
+ * [javaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) is connected via a script link at the end of the HTML file and provides the logic and function of the game.
+
+____
 ## Testing
 ### HTML
 The HTML was validated using https://validator.w3.org/
