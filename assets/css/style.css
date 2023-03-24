@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+
+/* Global styling settings */
+
 * {
     margin: 0;
     border: 0;
     padding: 0;
 }
+
+/* Element Styling */
 
 body {
     font-family: Montserrat, sans-serif;
@@ -25,8 +30,11 @@ header h1 {
     text-shadow: 1px 1px 4px aqua, -1px -1px 20px aqua, -1px -1px 16px aqua, 1px 0px 11px aqua;
 }
 
+a, a:visited {
+    text-decoration: none;
+}
 
-/* CODE CREDIT for modal and overlay (lines 30-121) https://www.freecodecamp.org/news/how-to-build-a-modal-with-javascript/ */
+/* CODE CREDIT for modal and overlay (lines 37-130) https://www.freecodecamp.org/news/how-to-build-a-modal-with-javascript/ */
 .modal {
     display: flex;
     flex-direction: column;
@@ -121,6 +129,7 @@ header h1 {
     z-index: 3;
   }
 
+  /* Game area styling */
 
 #gameArea {
     margin-bottom: 20px;
@@ -186,7 +195,7 @@ button:hover {
     height: 20vh;
 }
 
-
+/* Results Area Styling */
 
 #result {
     font-size: larger;
@@ -203,7 +212,10 @@ button:hover {
     border-radius: 15px;
 }
 
-/* CODE CREDIT - Overlay popup (lines 206-233) - https://findnerd.com/list/view/How-to-make-simple-Overlay-popup-/1966/ */
+/* Popup button that appears when the game is finished */
+
+/* CODE CREDIT - Overlay popup (lines 219-246) - https://findnerd.com/list/view/How-to-make-simple-Overlay-popup-/1966/ */
+
 .popup button {
     margin-left: auto;
     margin-right: auto;
@@ -258,14 +270,13 @@ button:hover {
     flex-direction: column;
 }
 
+/* Counters  */
 #remaining, #result {
     padding-top: 2vh;
 }
 
 
-a, a:visited {
-    text-decoration: none;
-}
+
 
 @media (max-width: 920px) {
 
