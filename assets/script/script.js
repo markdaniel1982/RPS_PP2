@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const openModal = function () {
         modal.classList.remove("hidden");
         overlay.classList.remove("hidden");
+        openModalBtn.classList.add("hidden");
       };
 
       openModalBtn.addEventListener("mouseenter", openModal);
@@ -34,6 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const closeModal = function () {
         modal.classList.add("hidden");
         overlay.classList.add("hidden");
+        openModalBtn.classList.remove("hidden")
       };
 
       closeModalBtn.addEventListener("click", closeModal);
@@ -143,4 +145,5 @@ document.addEventListener("DOMContentLoaded", function () {
     function playAgain() {
 
     }
+
 });

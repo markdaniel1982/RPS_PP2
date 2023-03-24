@@ -41,7 +41,7 @@ header h1 {
     background-color: aqua;
     border: 1px solid #ddd;
     border-radius: 15px;
-    z-index: 2;
+    z-index: 5;
     color: rgb(2, 2, 82);
   }
 
@@ -94,6 +94,7 @@ header h1 {
     position: absolute;
     top: 108px;
     left: 4vw;
+    z-index: 2;
   }
   
   .btn-close {
@@ -117,7 +118,7 @@ header h1 {
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(3px);
-    z-index: 1;
+    z-index: 3;
   }
 
 
@@ -126,7 +127,7 @@ header h1 {
     padding-top: 20px;
     background: aqua;
     width: 60vw;
-    height: 45vh;
+    height: fit-content;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -268,6 +269,12 @@ a, a:visited {
 
 @media (max-width: 920px) {
 
+    .modal {
+        width: 85vw;
+        top: 20vh
+    }
+
+
     header h1 {
         padding-bottom: 0.5%;
     }
@@ -304,9 +311,8 @@ a, a:visited {
         text-align: center;
         font-size: 1em;
         position: relative;
-        top: 700px;
+        top: 600px;
         left: 9vw;
-        z-index: 10;
     }
 
 }
@@ -319,7 +325,7 @@ a, a:visited {
 
 @media (max-width: 500px) {
 
-    #gameArea {
+        #gameArea {
         width: 90vw;
     }
 
@@ -332,11 +338,7 @@ a, a:visited {
         font-size: large;
     }
 
-    .modal {
-        width: 85vw;
-        top: 20vh
-    }
-
+    
     .btn-open {
         z-index: 5;
     }
@@ -361,4 +363,14 @@ a, a:visited {
         margin-top: 15vh;
         padding-top: 10px;
     }
+}
+
+@media (max-height: 700px) {
+
+    #gameArea {
+        height: fit-content;
+    }
+
+
+    
 }
