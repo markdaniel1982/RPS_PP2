@@ -227,7 +227,6 @@ button:hover {
     margin-left: auto;
     margin-right: auto;
     margin-top: 5%;
-
 }
 
 .popup {
@@ -263,6 +262,8 @@ button:hover {
     background-color: chartreuse;
 }
 
+/* Counters  */
+
 #winCounter {
     padding-top: 1vh;
     margin-bottom: 1vh;
@@ -270,13 +271,12 @@ button:hover {
     flex-direction: column;
 }
 
-/* Counters  */
+
 #remaining, #result {
     padding-top: 2vh;
 }
 
-
-
+/* Media Queries */
 
 @media (max-width: 920px) {
 
@@ -353,13 +353,11 @@ button:hover {
     header {
         font-size: large;
     }
-
     
     .btn-open {
         z-index: 5;
     }
-    
-    
+        
     #displayChoices {
         padding-top: 10px;
         font-size: medium;
@@ -386,7 +384,4 @@ button:hover {
     #gameArea {
         height: fit-content;
     }
-
-
-    
 }
