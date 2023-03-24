@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const closeModal = function () {
         modal.classList.add("hidden");
         overlay.classList.add("hidden");
-        openModalBtn.classList.remove("hidden")
+        openModalBtn.classList.remove("hidden");
       };
 
       closeModalBtn.addEventListener("click", closeModal);

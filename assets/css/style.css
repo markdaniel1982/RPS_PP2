@@ -214,13 +214,13 @@ button:hover {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15%;
+    margin-top: 5%;
 
 }
 
 .popup {
     width: 55%;
-    height: 80vh;
+    height: 60vh;
     padding-top: 5vh;
     background: #1ca29ee8;
     position: absolute;
@@ -292,6 +292,11 @@ a, a:visited {
         
     .popup {
         width: 85vw;
+        z-index: 6;
+    }
+
+    .popup, btn {
+        height: 70vh;
     }
 
     #winner {

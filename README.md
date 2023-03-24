@@ -8,13 +8,14 @@ _____
 
 ### Site Owner
   * Provide a game where the user can play against the computer.
+  * Allow user to find instructions for the game.
   * Show a count of the number of games left in the round.
   * after 5 games, calculate and display whether the player won or lost
 
 ### Site Users
-  * To easily understand how to start playing
-  * Get feedback in the form of on screen display of which move was chosen by the user and computer
-  * To see who was the winner of the 5 rounds
+  * To easily understand how to start playing, or find instructions on how to play.
+  * Get feedback in the form of on screen display of which move was chosen by the user and computer.
+  * To see who was the winner of the 5 rounds.
 
 _______
 
@@ -47,6 +48,8 @@ I used contrasting colours of aqua and a dark blue (rgb (2, 2, 82)) for the main
 There is only one page in this project which shows a header with the game title of Rock Paper Scissors. Underneath the header are two sections. The first is the game area showing three buttons, each with an icon of each available option. Below the buttons, the choices made by the user and the computer are displayed.
 
 The second section shows the the total number of round wins, which counts from 0 up to 5 and the result of that round. Below that is the number of rounds left in that game.
+
+After the game and results section were built, i decided to add a modal to allow users to see how to play the game. this is positioned to the top left of the game area on desktop devices and below the results section on smaller devices
 ____
 
 ## Testing
