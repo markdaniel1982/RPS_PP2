@@ -60,6 +60,9 @@ ____
 
 ____
 ## Testing
+
+I have tested the site on my mobile throughout the project and have also had friends play the game too. So it has been tested on a variety of different mobile devices including android phones and tablets & iphone and ipad. The issues found while testing were spacing of the elements and overlapping which have been fixed using media queries
+
 ### HTML
 The HTML was validated using https://validator.w3.org/
 ![HTML Validation](documentation/html_validation.png)
@@ -78,9 +81,11 @@ _____
 
 ### Lighthouse
 * Desktop
+
 ![Desktop Lighthouse scores](documentation/lighthouse_desktop.png)
 
 * Mobile
+
 ![Mobile Lighthouse scores](documentation/lighthouse_mobile.png)
 
 ___
@@ -110,7 +115,8 @@ _____
 
 ## Credits
 
-Game layout - I took the main code structure from here, but as it is a very simple version, I added in extra features of displaying selection made each round, a count of the wins/losses/draws and calculating and displaying the overall winner - https://www.geeksforgeeks.org/rock-paper-and-scissor-game-using-javascript/
+Game layout - I took the main code structure from here, but as it is a very simple version, I added in extra features of displaying selection made each round, a count of the wins/losses/draws and calculating and displaying the overall winner.
+ * https://www.geeksforgeeks.org/rock-paper-and-scissor-game-using-javascript/
 
 Also, a very big thank you to Slack user Tony Albanese who helped point me in the right direction when I was unable to correctly code the round countdown and overall winner.
 
