@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let overallWinner = document.getElementById("winner");
 
     // CODE CREDIT - https://www.freecodecamp.org/news/how-to-build-a-modal-with-javascript/
-    
+
     const modal = document.querySelector(".modal");
     const overlay = document.querySelector(".overlay");
     const openModalBtn = document.querySelector(".btn-open");
@@ -29,19 +29,19 @@ document.addEventListener("DOMContentLoaded", function () {
         modal.classList.remove("hidden");
         overlay.classList.remove("hidden");
         openModalBtn.classList.add("hidden");
-      };
+    };
 
-      openModalBtn.addEventListener("mouseenter", openModal);
+    openModalBtn.addEventListener("click", openModal);
 
-      const closeModal = function () {
+    const closeModal = function () {
         modal.classList.add("hidden");
         overlay.classList.add("hidden");
         openModalBtn.classList.remove("hidden");
-      };
+    };
 
-      closeModalBtn.addEventListener("click", closeModal);
+    closeModalBtn.addEventListener("click", closeModal);
 
-      overlay.addEventListener("click", closeModal);
+    overlay.addEventListener("click", closeModal);
 
     // Set event listener for buttons 
 
